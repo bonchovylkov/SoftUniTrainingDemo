@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implicit"
+
+        android:id="@+id/btnImplicitIntent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit"
+        android:id="@+id/btnExplicitIntent"
+        android:layout_below="@+id/btnImplicitIntent"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start simple list view"
+        android:id="@+id/btnStartSimpleListView"
+        android:layout_below="@+id/btnExplicitIntent"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom List View"
+        android:id="@+id/btnStartCustomListView"
+        android:layout_below="@+id/btnStartSimpleListView"
+        android:layout_alignRight="@+id/btnStartSimpleListView"
+        android:layout_alignEnd="@+id/btnStartSimpleListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:id="@+id/btnStartNotification"
+        android:layout_below="@+id/btnStartCustomListView"
+        android:layout_alignLeft="@+id/btnStartSimpleListView"
+        android:layout_alignStart="@+id/btnStartSimpleListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:id="@+id/btnStartGame"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/btnStartNotification"
+        android:layout_alignEnd="@+id/btnStartNotification" />
+
+
+</RelativeLayout>
